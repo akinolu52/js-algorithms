@@ -1,6 +1,12 @@
 <script>
     function euclidean(a, b) {
-        
-    }
+        const a_abs = Math.abs(a)
+        const b_abs = Math.abs(b)
 
+        return (b_abs === 0) ? a_abs : euclidean(b_abs, a_abs % b_abs)
+    }
+    let a = 252
+    let b = 105
+    let res = euclidean(a, b)
+    document.writeln(`The GCD of ${a} and ${b} = ${res}`)
 </script>
