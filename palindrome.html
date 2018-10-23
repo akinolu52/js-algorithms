@@ -1,0 +1,17 @@
+
+<script>
+    function isPalindrome(str) {
+        // filter the string
+        let filter = "/[^A-Za-z0-9]/g"
+
+        let lowerFilteredStr = str.toLowerCase().replace(filter, str)
+        // reverse string and check it it is equal
+        let reversedString = lowerFilteredStr.split('').reverse().join('')
+
+        console.log(lowerFilteredStr,reversedString)
+        return reversedString === lowerFilteredStr;
+    }
+    let string = 'A man, a plan, a canal. Panama'
+    let res = isPalindrome(string) ? "palindrome" : "not palindrome"
+    document.writeln("\'" + string + "\' is a " + res )
+</script>

@@ -1,0 +1,22 @@
+<script>
+
+    function fibonacci(n) {
+        if(n === 1) {
+            fn = 0
+        } else if(n <= 3) {
+            fn = 1
+        } 
+        fa = 1
+        fb = 1
+        for (let i = 4; i <= n; i++){
+            fn = fa + fb
+            fa = fb
+            fb = fn
+        }
+        return fn
+        console.log(fn)
+    }
+    let n = 8
+    let res = fibonacci(n)
+    document.writeln(`${n} fibonacci = ${res}`)
+</script>

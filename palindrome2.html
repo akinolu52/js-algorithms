@@ -1,0 +1,20 @@
+
+<script>
+    function isPalindrome(str) {
+        // filter the string
+        let filter = /[^A-Za-z0-9]/g
+
+        str = str.toLowerCase().replace(filter, '')
+        console.log(str)
+        len = str.length 
+        for(let i = 0; i < len / 2; i++ ) {
+            if (str[i] !== str[len - 1 - i]) {
+                return false;
+            }
+        }
+        return true
+    }
+    let string = 'A man, a plan, a canal. Panama'
+    let res = isPalindrome(string) ? "palindrome" : "not palindrome"
+    document.writeln("\'" + string + "\' is a " + res )
+</script>

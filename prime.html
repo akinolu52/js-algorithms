@@ -1,0 +1,27 @@
+<script>
+    function isPrime(n) {
+        if(isNaN(n) || n <= 1) {
+            return false
+        }
+        else if(n <= 3) {
+            return true
+        }
+        else if(n / 2 === 0) {
+            return false;
+        }
+        else {
+            for(let i = 2; i < Math.sqrt(n) ; i += 2 ) {
+                if (n % i == 0) {
+                    return false;
+                }
+            }
+            return true;
+        }
+    }
+    let number = 1
+    for(number = 1; number < 20; number++){
+        let res = isPrime(number) ? "prime" : "not prime"
+        document.writeln("\'" + number + "\' is a " + res)
+        document.write("<br>")
+    }
+</script>
