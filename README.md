@@ -6,3 +6,4 @@
 ### prime - _not perfect_
 ### euclidean
 ### lcm 
+### string reversal
