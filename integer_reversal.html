@@ -1,8 +1,8 @@
 <script>
     function reverse(number) {
-        
+        return parseInt(number.toString().split('').reverse().join('')) * Math.sign(number)
     }
-    let num = 1234
+    let num = -1200
     let res = reverse(num)
     document.writeln(`${res} is the reversed integer of ${num}`)
 </script>
