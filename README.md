@@ -7,3 +7,4 @@
 ### euclidean
 ### lcm 
 ### string reversal
+### integer reversal
