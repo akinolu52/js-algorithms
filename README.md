@@ -8,3 +8,5 @@
 ### lcm 
 ### string reversal
 ### integer reversal
+### fizz_buzz
+

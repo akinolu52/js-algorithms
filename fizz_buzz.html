@@ -1,0 +1,17 @@
+<script>
+    function fizz_buzz(num) {
+        for(let i = 1; i <= num; i++) {
+            if (i % 6 === 0) {
+                document.writeln("Fizz Buzz <br>")                
+            } else if(i % 2 === 0) {
+                document.writeln("Fizz <br>")
+            } else if(i % 3 === 0) {
+                document.writeln("Buzz <br>")
+            } else 
+                document.writeln(`${i} <br>`)
+            
+        }
+    }
+    let num = 20
+    fizz_buzz(num)
+</script>
