@@ -2,17 +2,17 @@
     function gcd(a, b){
         const a_abs = Math.abs(a)
         const b_abs = Math.abs(b)
-
-        // return (b_abs === 0) ? a_abs : euclidean(b_abs, a_abs % b_abs)
+        
         return (b_abs === 0) ? a_abs : gcd(b_abs, a_abs % b_abs)
     }
     function lcm(a, b){
         if((a == 0) || (b == 0)) {
             return 0
         }
+        console.log(Math.abs(a * b))
         return Math.abs(a * b) / gcd(a, b)
     } 
-    let a = 3
+    let a = 4
     let b = 6
     let res = lcm(a, b)
     document.writeln(`The LCM of ${a} and ${b} is ${res}`)
